@@ -1,4 +1,11 @@
-// functions 
+// function declaration 
+// A function created with a function declaration is a Function 
+// object and has all the properties, methods and behavior of 
+// Function objects. See Function for detailed information on functions.
+
+// By default, functions return undefined. To return any other 
+// value, the function must have a return statement that 
+// specifies the value to return.
 
 // Syntax
 function name(params) {
