@@ -15,19 +15,21 @@ const userMethods = {
 }
 
 function createUser(firstName, lastName, email, age, address) {
-    const user = {};
+// here we are creating a relationship between userMethods and createUser objects..
+// usign Object.create()
+
+    const user = Object.create(userMethods);
     user.firstName = firstName;
     user.lastName = lastName;
     user.email = email;
     user.age = age;
     user.address = address;
-    user.about = userMethods.about;
-    user.is18 = userMethods.is18;
-    user.sing = userMethods.sing; // added here as well 
+   
     return user;
 }
 
 const user1 = createUser('nayan','sayaji','nayansayaji@gmail.com', 20,'tamaswadi');
 const user2 = createUser('ruchi','dhamecha','ruchins@gmail.com', 20,'tamaswadi');
+// so this about and sing method is not in createUser method but as we created createUser by considering the userMethods as the prototype or __proto__ of the createUser method so now createUser method can access userMethods object..
 console.log(user1.about());
 console.log(user2.about());

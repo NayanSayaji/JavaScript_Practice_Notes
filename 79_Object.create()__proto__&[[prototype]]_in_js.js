@@ -39,12 +39,20 @@ console.log(obj2.key2); // value2
 
 obj2.key2 = "unique";
 console.log(obj2.key2); // unique
-// js founds the key2 inside the obj2 so it returned that value
-
-// 
+// here js found the key2 inside the obj2 so it returned that value
 
 
 // __proto__ is a way to inherit properties from an object in JavaScript. __proto__ a property of Object.prototype is an accessor property that exposes the [[Prototype]] of the object through which it is accessed.
+
+// __proto__ is property of object in js ... which stores the prototype of the current object 
+// const obj2 = Object.create(obj1);
+// if we created obj2 and set obj1 as a prototype of obj2 then __proto__ will store the obj1
+
+
+// __proto__ stores the reference of object 
+// const obj2 = Object.create(obj1);
+// here __proto__ haves the reference to obj1 through which we can acess obj1
+
 
 // so we can say that obj2 is created and it has the properties of obj1 and obj1 is the prototype of obj2
 console.log(obj2);
@@ -62,18 +70,18 @@ console.log(obj2);
 
 // __proto__ and [[prototype]] both are same...
 
-// officail ecmascript documentation is written as 
+// in officail ecmascript documentation is written as 
 // [[prototype]]
 
 // if browser is updated then it shows protype as [[prototype]] else it shows this __proto__
 
 // [[prototype]] will take 
 
-
-
-
-
-
+console.log("obj2.__proto__ is equal to : ",obj2.__proto__)
+// this will the prototype of the object means will print the object which is cosidered as the prototype of obj2 i.e., obj1 ........ hence
+// {key1: 'value1', key2: 'value2'}
+// key1: "value1"
+// key2: "value2"
 
 
 

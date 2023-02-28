@@ -1,6 +1,6 @@
 // OOP starting
 // proto, prototype, class
-
+ 
 const user = {
     firstName: "nayan",
     lastName: "sayaji",
