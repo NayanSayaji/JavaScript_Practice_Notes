@@ -34,12 +34,15 @@ const user2 = new CreateUser('ruchi', 'dhamecha', 'ruchins@gmail.com', 20, 'tama
 // about
 // is18
 // sing
-// but this will print all the key's of user1 including the key's of prototype as well
-// but suppose our requirement is just to gather key's from user1 only and not from the prototype 
+// but this will print all the key's of user1 including the key's 
+// of prototype as well
+// but suppose our requirement is just to gather key's from user1 
+// only and not from the prototype 
 
 // so there is a way
 // Object.hasOwnProperty(key)
-// this will check is the key belongs to that object or prototype nd return true or false
+// this will check is the key belongs to that object or prototype 
+// nd return true or false
 
 for (const key in user1) {
     if (user1.hasOwnProperty(key)) {

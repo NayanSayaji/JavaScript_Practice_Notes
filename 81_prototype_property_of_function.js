@@ -17,7 +17,8 @@ function hello(){
 // javaScript function =====>> function + object
 // in js function is treated function and we can treat it as object as well...
 
-// my objects have their properties so there are some properties for function as well bcoz we are treating it as object
+// my objects have their properties so there are some properties 
+// for function as well bcoz we are treating it as object
 console.log(hello.name()); 
 // name() property ---->>  tell the name of function
 
@@ -33,7 +34,8 @@ console.log(hello.myOwnProperty); // very unique value
 
 // prototype is a property of functions
 
-// this is given bcoz suppose sometimes we need to save any key value pairs we can store in that prototype...
+// this is given bcoz suppose sometimes we need to save any key 
+// value pairs we can store in that prototype...
 
 console.log(hello.prototype); // {}
 // constructor: ƒ hello()

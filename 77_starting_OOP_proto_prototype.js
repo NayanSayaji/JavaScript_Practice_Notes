@@ -17,9 +17,11 @@ const user = {
 
 // const aboutUser = user.about();
 
-// suppose we want to create multiple millions objcets like this this so if we type it manually then it become so tidious task to do
+// suppose we want to create multiple millions objcets like this 
+// this so if we type it manually then it become so tidious task to do
 
-// so we'll create a function which will take input firstName, lastName , email, age, address 
+// so we'll create a function which will take input firstName, 
+// lastName , email, age, address 
 // and that 
 // 1 ) function will create a object 
 // 2 ) and then insert key : value pairs into it 

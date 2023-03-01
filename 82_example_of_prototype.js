@@ -1,5 +1,6 @@
 
-// instead of doing this let's add this methods inside of the prototype of the createUser function
+// instead of doing this let's add this methods inside of the 
+// prototype of the createUser function
 
 // const userMethods = {
 //     about: function () {
@@ -29,13 +30,17 @@ function createUser(firstName, lastName, email, age, address) {
 
     return user;
 }
-// as we know when we create a function then there is a prototype property or a empty object {} is  created associated with it where we can store the key value pairs related to that function...
+// as we know when we create a function then there is a prototype 
+// property or a empty object {} is  created associated with it 
+// where we can store the key value pairs related to that function...
 
-// let's check is it correct that a prototype property is present for the createUser function or now
+// let's check is it correct that a prototype property is present 
+// for the createUser function or now
 console.log(createUser.prototype);
 // {constructor: ƒ}
 
-// so instead of creating new object userMethods for storing new methods we can add this methods inside the prototype of this function only
+// so instead of creating new object userMethods for storing new 
+// methods we can add this methods inside the prototype of this function only
 
 // and we need to change declaration of user from  this..
 // const user = Object.create(userMethods);
