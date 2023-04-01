@@ -68,3 +68,11 @@ const lastname = "sayaji";
 
 // There is a term called tdz
 // Temporal Dead Zone is the period of time during which the let and const declarations cannot be accessed. Temporal Dead Zone starts when the creation phase completed and code execution enters the block which contains the let or const declaration and continues until the declaration has executed or  untill the let and const are initialised with a value.
+
+
+
+// in memory creation phase or creation phase the variable or function
+// created using var will have the value undefined untill the intialization comes
+
+// the variable or function
+// created using let and const will have the value uninitialised untill the intialization comes

@@ -54,6 +54,8 @@
 
 // these all key value pairs stores in a object and that object is called environment record
 // global execution context is added into stack 
+// or whichever execution context like global or local is in work
+// currently is pushed to the top of the stack
 
 //  |                |
 //  |                |
