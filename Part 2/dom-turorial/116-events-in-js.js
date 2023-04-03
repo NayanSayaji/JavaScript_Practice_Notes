@@ -25,11 +25,15 @@ const btn = document.querySelector(".btn-headline");
 // }
 // btn.addEventListener("click",clickMe);
 
-// addEventListener takes take 2 parameters
+// addEventListener takes take 3 parameters
 // first is event to be done
-// and a function
+// and a event handler function and 3rd one is the 
+// capture handler ... will learn about this in 125th file
 
-// this is the most used way 
+// element.addEventListener("event", handler func()=>{}, true)
+
+
+// using arrow function is the most used way 
 btn.addEventListener("click",()=>{
     console.log("You clicked Me.....")
 });

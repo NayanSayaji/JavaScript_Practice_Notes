@@ -1,3 +1,9 @@
+// DOM relationships 
+// getRootNode
+// htmlElementNode.childNodes = returns a NodeList[]
+// 
+
+
 // const rootNode = document.getRootNode();
 // // rootNode of the html file is document
 // console.log(rootNode); // #document

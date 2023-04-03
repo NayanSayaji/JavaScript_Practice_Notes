@@ -109,10 +109,19 @@ a {
 .todo-list li{
     padding: 0.7rem;
     background: #444;
-    color: cyan;
+    color: rgb(255, 255, 255);
     margin-top: 1rem;
     text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
 }
+.todo-btn{
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 .section-signup {
     margin-top: 5rem;
     text-align: center;

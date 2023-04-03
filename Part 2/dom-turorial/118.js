@@ -1,4 +1,4 @@
-// const firstButton = document.querySelectorAll('#onex');
+// const firstButton = document.querySelectorAll('#one');
 
 // firstButton.addEventListener("click", function(){
 //     console.log("you clicked me");

@@ -9,4 +9,4 @@ console.log(mainHeading.style);
 
 // we can use the use it by selecting the properties from that style object
 mainHeading.style.backgroundColor = "red";
-mainHeading.style.border = "10px double black"
+mainHeading.style.border = "10px double black";

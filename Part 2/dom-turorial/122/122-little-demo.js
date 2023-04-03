@@ -14,9 +14,24 @@ function randomColorGenerator(){
 
 }
 
-mainButton.addEventListener("click", ()=>{
-    const randomColor = randomColorGenerator();
-    body.style.backgroundColor = randomColor;
+// simple color
+// mainButton.addEventListener("click", ()=>{
+//     const randomColor = randomColorGenerator();
+//     body.style.backgroundColor = randomColor;
 
-    currentColor.textContent = randomColor;
+//     currentColor.textContent = randomColor;
+// })
+
+
+// using linear-gradient for background Coloring
+mainButton.addEventListener("click", ()=>{
+    const randomColor1 = randomColorGenerator();
+    const randomColor2 = randomColorGenerator();
+    const color = `linear-gradient(97deg, ${randomColor1},${randomColor2})`;
+
+    body.style.backgroundImage = color;
+
+    currentColor.textContent = color;
 })
+
+
