@@ -5,6 +5,11 @@ console.log(sectionTODO);
 console.log("classList of section-todo ( how many classes section-todo container has)  : ",sectionTODO.classList);
 
 
+// classList of section-todo ( how many classes section-todo container has)  : 
+//  DOMTokenList(2) ['section-todo', 'container', value: 'section-todo container']
+
+
+
 // adding class in a html element using js 
 // sectionTODO.classList.add("bg-dark");
 // removing class using js 

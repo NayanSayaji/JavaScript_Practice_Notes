@@ -27,11 +27,16 @@ for (const button of allButton) {
         // console.log(e); 
         // console.log(e.target);
         console.log(e.currentTarget);
-        // target is property of object which the argument passed inside the callback function returns
+        // target is property of object which passed as an argument inside the callback function returns.
         //  target will print the element on which the event is occured
 
         // currentTarget is the element to which the 
         // event is attached. It will never change. Event.
         // target is the element that triggered the event.
+
+
+        // suppose event is applied on parent but it is called by child then the target is child
+        // becoz event called by child 
+        // and currentTarget is parent bcoz event is attached to it
     })
 }

@@ -36,6 +36,7 @@ console.log(ans);
 // using the arrow function
 
 // when we return a single expression we dont curly braces 
-// and we dont even write the return kwyword as well 
+// and we dont even write the return keyword as well 
 // we can simply do like this
 // const function = power => number => number ** power
+// as we know when there is a single parameter in arrow function we don't write paranthesis ()

@@ -90,4 +90,17 @@ grandParent.addEventListener("click",(e)=>{
 
 // means we added a eventListener on grandParent but if we click on child then also that eventListener will be called
 
-// 
+
+
+// learn about event propagation here:
+// https://www.freecodecamp.org/news/a-simplified-explanation-of-event-propagation-in-javascript-f9de7961a06e/
+
+// learn about event bubbling and propagation in detail :
+// https://www.freecodecamp.org/news/event-bubbling-in-javascript/
+
+
+// event delegation
+// https://www.freecodecamp.org/news/event-delegation-javascript/
+
+// bubbling and capturing
+// https://javascript.info/bubbling-and-capturing

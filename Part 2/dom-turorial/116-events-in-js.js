@@ -37,3 +37,14 @@ const btn = document.querySelector(".btn-headline");
 btn.addEventListener("click",()=>{
     console.log("You clicked Me.....")
 });
+
+
+
+
+
+
+
+// Events occur when the page loads, when user interacts (clicks, hovers, changes)
+// and myriad other times, and can be triggered manually too. To react to an event you 
+// listen for it and supply a function which will be called by the browser when the event occurs. 
+// This function is known as a callback.

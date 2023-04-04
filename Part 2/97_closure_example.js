@@ -16,7 +16,7 @@ function func(){
     }
 }
 
-const myFunc= func();
-myFunc();
-myFunc();
-myFunc();
+const myFunc= func(); // here we have stored that func() inside of the myFunc variable 
+myFunc(); // calling for 1st time: Hi, You called me
+myFunc(); // calling for 2nd time : Main already ek bar call ho chuka hu
+myFunc(); // calling for 3rd time : Main already ek bar call ho chuka hu

@@ -25,3 +25,12 @@ mainButton.addEventListener("mouseover", ()=>{
 mainButton.addEventListener("mouseleave", ()=>{
     console.log("mouseleave event occur..");
 })
+
+
+
+
+
+
+
+// read more about the events in JS :
+// https://www.freecodecamp.org/news/javascript-events-explained-in-simple-english/

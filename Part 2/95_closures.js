@@ -1,7 +1,7 @@
 // closures
 
 
-// function can return functions
+// function which return functions
 // function outerFunc(){
 //     function innerFunc() {
 //         console.log("Hello World");
@@ -9,7 +9,7 @@
 //     return innerFunc;
 // }
 
-// const ans = outerFunc();
+// const ans = outerFunc(); 
 // console.log(ans);
 // ans();
 

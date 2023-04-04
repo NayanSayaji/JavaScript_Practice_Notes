@@ -10,12 +10,14 @@ todoList.innerHTML = "<li>New Todo </li>";
 
 // adding more HTML to the already available HTML
 // todoList.innerHTML = todoList.innerHTML + "<li>New todo</li>";
+//       i  =   i + 1
+//       i  +=  1
 todoList.innerHTML += "<li>New todo</li>";
 todoList.innerHTML += "<li>Gym</li>";
 
 // but when we use innerHTML that time it dont add new html 
 // only but it takes old code available and add new innerHTML
-//  into it and then render it that's why this cause performance issue
+// into it and then render it that's why this cause performance issue
 
 
 // when you should use it, when you should not
