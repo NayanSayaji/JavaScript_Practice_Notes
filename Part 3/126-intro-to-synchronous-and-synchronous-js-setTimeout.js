@@ -15,6 +15,10 @@
 // console.log("script end");
 
 // setTimeout is a browser functionality
+// The setTimeout is a JavaScript function that takes two parameters. 
+// The first parameter is another function, and the second is the time 
+// after which that function should be executed in milliseconds.
+
 
 console.log("script start");
 

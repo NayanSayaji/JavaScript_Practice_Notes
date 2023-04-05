@@ -9,6 +9,7 @@
 
 const body = document.body;
 const button = document.querySelector("button");
+
 const intervalId = setInterval(() => {
   const red = Math.floor(Math.random() * 256);
   const green = Math.floor(Math.random() * 256);
@@ -17,8 +18,9 @@ const intervalId = setInterval(() => {
   body.style.background = rgb;
 }, 1000);
 
+// for stoping the color changing effect after clicking on the button
 button.addEventListener("click", () => {
-  clearInterval(intervalId);
+  clearInterval(intervalId);// this will stop the interval after the click event called
   button.textContent = body.style.background;
 });
 
