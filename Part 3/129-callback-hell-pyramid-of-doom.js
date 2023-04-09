@@ -35,73 +35,83 @@ const heading10 = document.querySelector(".heading10");
 // and then 1st setTimeout with 4000ms will execute
 
 // and this will but order matters so bcoz of that we use
-// nested setTimeout and it known as callback hell
+// nested setTimeout 
+
+// The phenomenon which happens when we nest multiple callbacks within a function
+// is called a callback hell. The shape of the resulting code structure resembles 
+// a pyramid and hence callback hell is also called the “pyramid of the doom”.
 
 // callback hell  == nested setTimeouts
-setTimeout(()=>{
-  heading1.textContent = "one";
-  heading1.style.color = "violet";
-  setTimeout(()=>{
-    heading2.textContent = "two";
-    heading2.style.color = "purple";
-    setTimeout(()=>{
-      heading3.textContent = "three";
-      heading3.style.color = "red";
-      setTimeout(()=>{
-        heading4.textContent = "four";
-        heading4.style.color = "pink";
-        setTimeout(()=>{
-          heading5.textContent = "five";
-          heading5.style.color = "green";
-        },2000)
-        
-      },1000)
-      
-    },2000)
-    
-  },2000)
-  
-},1000)
-
-// function changeText(element, text, color, time, onSuccessCallback, onFailureCallback) {
+// setTimeout(()=>{
+//   heading1.textContent = "one";
+//   heading1.style.color = "violet";
 //   setTimeout(()=>{
-//     if(element){
-//       element.textContent = text;
-//       element.style.color = color;
-//       if(onSuccessCallback){
-//         onSuccessCallback();
-//       }
-//     }else{
-//       if(onFailureCallback){
-//         onFailureCallback();
-//       }
-//     }
-//   },time)
-// }
+//     heading2.textContent = "two";
+//     heading2.style.color = "purple";
+//     setTimeout(()=>{
+//       heading3.textContent = "three";
+//       heading3.style.color = "red";
+//       setTimeout(()=>{
+//         heading4.textContent = "four";
+//         heading4.style.color = "pink";
+//         setTimeout(()=>{
+//           heading5.textContent = "five";
+//           heading5.style.color = "green";
+//         },2000)
+        
+//       },1000)
+      
+//     },2000)
+    
+//   },2000)
+  
+// },1000)
+
+// this becomes much tidious and for this we use promises
 
 
-// // pyramid of doom
-// changeText(heading1, "one","violet",1000,()=>{
-//   changeText(heading2, "two","purple",2000,()=>{
-//     changeText(heading3, "three","red",1000,()=>{
-//       changeText(heading4, "four","pink",1000,()=>{
-//         changeText(heading5, "five","green",2000,()=>{
-//           changeText(heading6, "six","blue",1000,()=>{
-//             changeText(heading7, "seven","brown",1000,()=>{
-//               changeText(heading8, "eight","cyan",1000,()=>{
-//                 changeText(heading9, "nine","#cda562",1000,()=>{
-//                   changeText(heading10, "ten","dca652",1000,()=>{
+// let's do the above task using creating a function
+
+function changeText(element, text, color, time, onSuccessCallback, onFailureCallback) {
+  setTimeout(()=>{
+    if(element){
+      element.textContent = text;
+      element.style.color = color;
+
+      // here we have just called or invoked this function and we can create this function outside of this function changeText and then pass it as argument or we can write a arrow function while calling this function
+      if(onSuccessCallback){
+        onSuccessCallback();
+      }
+    }else{
+      if(onFailureCallback){
+        onFailureCallback();
+      }
+    }
+  },time)
+}
+
+// pyramid of doom 
+changeText(heading1, "one","violet",1000,()=>{
+  changeText(heading2, "two","purple",2000,()=>{
+    changeText(heading3, "three","red",1000,()=>{
+      changeText(heading4, "four","pink",1000,()=>{
+        changeText(heading5, "five","green",2000,()=>{
+          changeText(heading6, "six","blue",1000,()=>{
+            changeText(heading7, "seven","brown",1000,()=>{
+              changeText(heading8, "eight","cyan",1000,()=>{
+                changeText(heading9, "nine","#cda562",1000,()=>{
+                  changeText(heading10, "ten","dca652",1000,()=>{
                     
-//                   },()=>{console.log("Heading10 does not exist")})
-//                 },()=>{console.log("Heading9 does not exist")})
-//               },()=>{console.log("Heading8 does not exist")})
-//             },()=>{console.log("Heading7 does not exist")})
-//           },()=>{console.log("Heading6 does not exist")})
-//         },()=>{console.log("Heading5 does not exist")})
-//       },()=>{console.log("Heading4 does not exist")})
-//     },()=>{console.log("Heading3 does not exist")})
-//   },()=>{console.log("Heading2 does not exist")})
-// },()=>{console.log("Heading1 does not exist")})
+                  },()=>{console.log("Heading10 does not exist")})
+                },()=>{console.log("Heading9 does not exist")})
+              },()=>{console.log("Heading8 does not exist")})
+            },()=>{console.log("Heading7 does not exist")})
+          },()=>{console.log("Heading6 does not exist")})
+        },()=>{console.log("Heading5 does not exist")})
+      },()=>{console.log("Heading4 does not exist")})
+    },()=>{console.log("Heading3 does not exist")})
+  },()=>{console.log("Heading2 does not exist")})
+},()=>{console.log("Heading1 does not exist")})
 
 
 

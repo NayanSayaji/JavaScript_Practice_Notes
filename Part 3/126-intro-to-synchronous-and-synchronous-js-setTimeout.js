@@ -19,6 +19,7 @@
 // The first parameter is another function, and the second is the time 
 // after which that function should be executed in milliseconds.
 
+// setTimeout has a callback queue where the calllbacks of the setTimeout waits
 
 console.log("script start");
 
@@ -53,3 +54,4 @@ console.log("Script end");
 
 // resourses to read more :-
 // https://www.freecodecamp.org/news/synchronous-vs-asynchronous-in-javascript/
+
