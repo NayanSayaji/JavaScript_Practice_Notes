@@ -15,7 +15,14 @@ function ricePromise(){
     })
   }
   
-  
+  // now using a function returning promise 
+  // we will call ricePromise() function and .then this will
+  // execute when the promise will be resolved 
+  // and after that .catch execute when the promise will be rejected 
+
+  // here we don't have promise name so we cant use
+  // promiseName.then() but we have a function which returns a promise
+  // so let's call that promise and use .then() method on that
   ricePromise().then(
     // jab promise resolve hoga 
     (myfriedRice)=>{

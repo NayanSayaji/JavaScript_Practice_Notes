@@ -58,10 +58,30 @@ const bucket = ['coffee', 'chips', 'vegetables', 'salt', 'rice'];
 // we can pass anything inside resolve which can be a array object value string
 
 
-const friedRicePromise = new Promise((resolve, reject) => {
+// there is a Promise class in js
+//  we create new object of promise using new constructor bcoz                                
+// this is the executor function which is written inside the promise 
+
+
+// () => {
+//    anything;
+// } 
+// this kind of array function is known as flat arrow function
+
+const friedRicePromise = new Promise(
+    // executor function 
+    // resolve is a parameter that show is the promise is completed
+    // if promise is not completed then it'll take reject only
+    (resolve, reject) => {
     // for checking whether few things are present in the bucket for making rice or not
     if (bucket.includes("vegetables") && bucket.includes("salt") && bucket.includes("rice")) {
-        resolve({ value: "friedrice" });
+        resolve({ value: "friedrice" }); // this shows that when the promise will be completed / resolved 
+                                        // then resolve will return a object which has name value and that 
+                                        // value is having a value friedrice
+
+                                        // this is not neccessary to name that key as a value 
+                                        // you can pass any name to the key and can pass any object through
+                                        // resolve
     } else {
         reject("could not do it");
     }
@@ -90,16 +110,20 @@ const friedRicePromise = new Promise((resolve, reject) => {
 // but insted of these two call back function we can add only one callback function and 
 // add .catch using the promise chaining
 
-
-
+// consuming promise
+// whatever 
 friedRicePromise.then(
     // jab promise resolve hoga 
-    (myfriedRice) => {
+    (myfriedRice) => { // this parameter inside .then is the value returned by the resolve function in promise
         console.log("lets eat ", myfriedRice);
     }).catch(
-        (error) => {
+        (error) => { // this error parameter is passed by the reject function in promise
             console.log(error)
         })
+
+        // If at any point in the chain of functions a 
+        // value is rejected the chain will skip to the 
+        // nearest catch() handler.
 
 
 setTimeout(() => {
@@ -147,3 +171,27 @@ console.log("script end!!!!")
 
 
 // https://www.freecodecamp.org/news/javascript-promise-tutorial-how-to-resolve-or-reject-promises-in-js/
+
+// https://www.freecodecamp.org/news/javascript-async-await-tutorial-learn-callbacks-promises-async-await-by-making-icecream/
+
+
+
+
+//                         A promise is made
+//                                 |
+//                                 |
+//                             pending
+//                             /      \
+//                            /        \
+//                     resolve         reject
+//                         |              |
+//                       .then            |
+//                         |             .catch
+//                       .then            |
+//                            \          / 
+//                             \        /
+//                              .finally
+
+        
+// when promise is resolved it returns a promise again then again call it with .then handler
+// and if the promise is rejected then .catch handler for returning error object
