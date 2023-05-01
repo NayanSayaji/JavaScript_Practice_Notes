@@ -4,6 +4,7 @@
 
 // console.log(navItems);
 // we can't use forEach method to iterate through HTMLCollection 
+// because it's just a array like object not a array completely
 // simple for loop
 // for of loop
 

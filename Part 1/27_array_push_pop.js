@@ -15,14 +15,14 @@ console.log(fruits);
 
 // fruits.pop();
 // pop() removes last item and returns the 
-// value of that last item
+// value of that last item and returns a array element
 // e.g
-console.log(fruits.pop());
+console.log(fruits.pop()); // --- pineapple removed
 // this will return the value of removed 
 // element is array
 // storing the removed items into new array
 console.log(fruits);
-let poppedFruit = fruits.pop();
+let poppedFruit = fruits.pop(); // mango removed and stored into poppedFruit[]
 
 console.log(fruits);
 console.log("popped fruit is",poppedFruit);
@@ -31,7 +31,7 @@ console.log("popped fruit is",poppedFruit);
 
 // unshift
 fruits.unshift("banana");
-// fruits = [ 'apple','banana' ]
+// fruits = [ 'banana','apple' ]
 
 fruits.unshift("myfruit");
 // [ 'myfruit', 'banana', 'apple' ]

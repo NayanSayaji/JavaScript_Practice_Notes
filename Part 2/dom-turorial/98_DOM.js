@@ -19,3 +19,14 @@ console.log(document);
 // if we want to print it in form of js objects form the it can be using dir
 console.dir(window.document);
 console.dir(document);
+
+const window = {
+
+    "document" : {
+        getElementByID : function(){
+            
+        }
+    },
+}
+
+document.getElementById("")

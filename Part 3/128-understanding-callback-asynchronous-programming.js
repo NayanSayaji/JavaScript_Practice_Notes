@@ -12,7 +12,7 @@
 //    console.log("function is doing task 2..")
 // }
 
-// here we created a arrow function while the calling the myFunc
+// here we created a arrow function while calling myFunc
 // eg., myFunc(()=>{}) here also this is working as a callback bcoz we have passed a anonymous function as a argument there
 //  -------
 // myFunc(() => {

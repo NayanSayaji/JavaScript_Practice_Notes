@@ -22,7 +22,7 @@ console.log(firstName);
     let name = "nayan";
     it'll give a error
 */
-// let keyword realised with the 
+// let keyword realised/introduced with the 
 // es6 {es2015} (ecmaScript) version of javaScript
 
 // block scope vs function scope 

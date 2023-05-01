@@ -3,7 +3,7 @@
 const mainHeading = document.querySelector("section.container h2");
 
 console.log(mainHeading.style);
-// there is style object for each of the element which haves
+// there is style object for each of the element which have
 // all the style properties present in css whether they have applied or not 
 // if not applied then by default it is not applied
 

@@ -13,7 +13,7 @@
 
 
 let firstName = "Nayan";
-let age = 22;
+let age = 20;
     
 if(firstName[0] === "N" && age > 18){
     console.log("inside if");

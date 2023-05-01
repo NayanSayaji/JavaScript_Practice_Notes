@@ -29,3 +29,21 @@ console.log(mainHeading.textContent);
 
 mainHeading.textContent = "This is new heading";
 console.log(mainHeading.innerText);
+
+{/* <p id="myP">    This element has extra spacing    and contains 
+        <span>a span element</span>.
+    </p> */}
+let text = document.getElementById("myP").innerText;
+
+let text1 = document.getElementById("myP").innerHTML;
+
+let text2 = document.getElementById("demo").textContent;
+
+// The innerText property returns:
+// This element has extra spacing and contains a span element.
+
+// The innerHTML property returns:
+//    This element has extra spacing    and contains <span>a span element</span>.
+
+// The textContent property returns:
+//    This element has extra spacing    and contains a span element.
